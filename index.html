@@ -5,75 +5,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matcha</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<style>
-  :root {
-    --color-back: #14213d;
-    --color-primary: #219ebc;
-  }
-
-  body {
-    font-family: verdana;
-    margin: 0;
-    padding: 0;
-  }
-
-  .wrapper {
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    text-align: center;
-    background-color: var(--color-back);
-    color: #fff;
-  }
-
-  .hero {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    width: 100%;
-  }
-
-  h1 {
-    color: var(--color-primary);
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
-  button {
-    padding: 2px;
-    border: 0;
-    background-color: var(--color-primary);
-    color: #fff;
-  }
-</style>
 <body>
   <div class="wrapper">
-    <h1>Build your blog. Build your business.</h1>
-    <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog's
-      impact on sales</p>
-    <strong>franciscosoliscss@gmail.com</strong>
+    <!-- <div class="circle"></div> -->
+    <header>
+      <div class="logo">
+        <a href="https://getmatcha.com/">
+          <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Logo matcha" class="logo__image">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li>Products</li>
+          <li>Tamplates</li>
+          <li>Pricing</li>
+          <li>Customers</li>
+          <li>Blog</li>
+          <li>Resources</li>
+        </ul>
+        <div class="menu__actions">
+          <a href="">Sing In</a>
+          <button>Start a free trial</button>
+        </div>
+      </nav>
+    </header>
     <main class="hero">
-      <form>
-        <input type="email" />
-        <button type="submit">
-          Try it now &rarr;
-        </button>
-      </form>
-      <figure>
-        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="A random image">
-      </figure>
+      <h1>Build your blog. Build your business.</h1>
+      <p>Instantly publish articles, drive more traffic grow your email list and see your blog's</p>
+      <p>
+        Start publishing today with a <strong>free 7-day trial.</strong>
+      </p>
+      <p>
+        <strong>No credit card</strong> required.
+      </p>
+      <div class="cta">
+        <form>
+          <input type="email" />
+          <button type="submit">
+            Try it now &rarr;
+          </button>
+        </form>
+        <figure>
+          <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="A random image">
+        </figure>
+      </div>
     </main>
   </div>
 </body>
