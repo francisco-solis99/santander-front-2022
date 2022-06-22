@@ -103,6 +103,7 @@ header {
   padding: 10px;
   position: fixed;
   top: 0;
+  background-color: #FFFBF7;
 }
 
 
@@ -161,8 +162,8 @@ header, main {
 
 
 header {
-  margin: 40px 20px 0;
   position: fixed;
+  z-index: 4;
 }
 
 main {
@@ -336,4 +337,74 @@ main {
 
 .testimony__text-btn {
   margin: 0;
+}
+
+/* Styles for the features section */
+
+.features__cards {
+  margin: 40px auto;
+  width: 80%;
+  height: calc(330px * 2);
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 20px;
+}
+
+.features__title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #DADADA;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  overflow: hidden;
+}
+
+.feature__left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.feature__image-wrapper {
+  width: 15%;
+  display: block;
+}
+
+.feature__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature__title {
+  color: #474747;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.feature__text {
+  color:#B3B3B3;
+  font-size: 1rem;
+}
+
+.feature__right {
+  display: block;
+  width: 60%;
+  max-width: 180px;
+  margin-right: -20px;
+}
+
+.feature__link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #8EC87B;
 }
