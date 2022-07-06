@@ -61,6 +61,11 @@ form {
   background-color: var(--color-primary);
   color: #fff;
   cursor: pointer;
+  transition: all ease-in 200ms;
+}
+
+.matcha__button:hover {
+  background-color: #67b54b;
 }
 
 .circle {

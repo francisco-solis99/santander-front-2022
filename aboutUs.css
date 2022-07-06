@@ -1,0 +1,123 @@
+/** _global.scss */
+/** _global.scss */
+/** colores */
+/** fuentes */
+/** placeholders */
+body {
+  background-color: #fffbf7 !important;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  width: 15%;
+  margin: 0;
+}
+
+.logo > img {
+  width: 15%;
+}
+
+.navbar {
+  background-color: #fffbf7;
+  text-align: center;
+  color: #025157;
+  font-weight: 500;
+}
+.navbar ul {
+  padding: 0;
+}
+
+.menu__actions {
+  text-align: right;
+  font-size: 14px;
+}
+.menu__actions > * {
+  margin: 0 10px;
+}
+.menu__actions a {
+  color: #67b54b;
+}
+.menu__actions button {
+  background-color: #67b54b;
+  color: white;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.top-features {
+  margin-top: 130px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h1 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+}
+
+.feature__img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.feature__title__anchor {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 24px;
+}
+.feature__title__anchor .feature__title {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 35px;
+  text-decoration: none;
+  color: inherit;
+  text-shadow: #025157 1px 1px 2px;
+  transition: color ease-in-out 200ms;
+  transition: font-size 1s;
+}
+.feature__title__anchor:hover {
+  color: #67b54b;
+  font-size: 30px;
+}
+
+.arrow {
+  min-height: 130px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.arrow .wrapper-arrow {
+  width: 30%;
+  min-width: 130px;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  animation: jump infinite linear alternate 3s;
+}
+.arrow .wrapper-arrow .arrow-image {
+  max-width: 100%;
+  transform: rotate(-90deg);
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=aboutUs.css.map */
